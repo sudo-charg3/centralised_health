@@ -69,5 +69,5 @@ def get_all_docs(user_id):
     user_reports = reports.get(user_id, [])
     return jsonify(user_reports), 200
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True, use_reloader=False, threaded=False)
