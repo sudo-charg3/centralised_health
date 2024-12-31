@@ -34,6 +34,11 @@ reports = {
     ]
 }
 
+@app.route('/')
+def home():
+    return "Welcome to the Flask API!"
+
+
 @app.route('/register/user', methods=['POST'])
 def register_user():
     data = request.get_json()
